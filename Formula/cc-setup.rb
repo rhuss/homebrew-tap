@@ -5,21 +5,21 @@
 class CcSetup < Formula
   desc "Interactive CLI to manage MCP servers for Claude Code"
   homepage "https://github.com/rhuss/cc-setup"
-  version "0.1.2"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rhuss/cc-setup/releases/download/v0.1.2/cc-setup-0.1.2-darwin-amd64.tar.gz"
-      sha256 "36fdc5609ae90b85edbe67b34a76d5366aa259ac7d6addaa0dedaaad4d544472"
+      url "https://github.com/rhuss/cc-setup/releases/download/v0.2.0/cc-setup-0.2.0-darwin-amd64.tar.gz"
+      sha256 "92827567abf8137e8505c0294856e0fd81935004835897703eb3bd63b312b9dd"
 
       define_method(:install) do
         bin.install "cc-setup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rhuss/cc-setup/releases/download/v0.1.2/cc-setup-0.1.2-darwin-arm64.tar.gz"
-      sha256 "94b5266302c5b8d2f119ca19c48d8f67bc20de6461153d3f60923b7fc7412896"
+      url "https://github.com/rhuss/cc-setup/releases/download/v0.2.0/cc-setup-0.2.0-darwin-arm64.tar.gz"
+      sha256 "39fa127eb5be6f62ebd9566275bb5534cc7edc2e6385a3b6681035b594f21e36"
 
       define_method(:install) do
         bin.install "cc-setup"
@@ -29,15 +29,15 @@ class CcSetup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rhuss/cc-setup/releases/download/v0.1.2/cc-setup-0.1.2-linux-amd64.tar.gz"
-      sha256 "f42946be224a0525b6ea30641d7f3ce103c85d8b6154e96b6b734c13bbd38b2d"
+      url "https://github.com/rhuss/cc-setup/releases/download/v0.2.0/cc-setup-0.2.0-linux-amd64.tar.gz"
+      sha256 "cad5b9aa9493b79fd822908473ddcaf90f2b01394d9b8e85e4e50c6761ce9e1a"
       define_method(:install) do
         bin.install "cc-setup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rhuss/cc-setup/releases/download/v0.1.2/cc-setup-0.1.2-linux-arm64.tar.gz"
-      sha256 "f2d66f44da41e009085cd6b831f94c94af6bed1e23e7bea8b6cc80b822486043"
+      url "https://github.com/rhuss/cc-setup/releases/download/v0.2.0/cc-setup-0.2.0-linux-arm64.tar.gz"
+      sha256 "8697204ffb0824cb4cb1b7025c801826fbc04fc8499dd765eb314c03c77a1d24"
       define_method(:install) do
         bin.install "cc-setup"
       end

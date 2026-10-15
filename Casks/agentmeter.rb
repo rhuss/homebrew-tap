@@ -1,6 +1,6 @@
 cask "agentmeter" do
-  version "0.1.1"
-  sha256 "0b5a4dcef500e44e05b7af916852ff843559ea46daa4385fb96a171a12e8922d"
+  version "0.2.0"
+  sha256 "b15e3731575f950f5b623eae5c3a3658f4a0b950b736269025cf7b8d8629ce7b"
 
   url "https://github.com/rhuss/agentmeter/releases/download/v#{version}/AgentMeter-#{version}.dmg"
   name "AgentMeter"
@@ -15,8 +15,8 @@ cask "agentmeter" do
   uninstall quit: "dev.rhuss.agentmeter"
 
   zap trash: [
-    "~/.config/llm-usage-menubar",
-    "~/Library/Logs/llm-usage-menubar",
+    "~/.config/agentmeter",
+    "~/Library/Logs/agentmeter",
     "~/Library/Preferences/dev.rhuss.agentmeter.plist",
   ]
 

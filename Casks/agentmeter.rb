@@ -1,6 +1,6 @@
 cask "agentmeter" do
-  version "0.2.0"
-  sha256 "b15e3731575f950f5b623eae5c3a3658f4a0b950b736269025cf7b8d8629ce7b"
+  version "0.2.1"
+  sha256 "1f95c4bcf0533657941fd33777415542d4cde749029e0a955b2fe2801618740b"
 
   url "https://github.com/rhuss/agentmeter/releases/download/v#{version}/AgentMeter-#{version}.dmg"
   name "AgentMeter"
@@ -21,13 +21,6 @@ cask "agentmeter" do
   ]
 
   caveats <<~EOS
-    AgentMeter is not notarized by Apple. After each install or upgrade,
-    allow it once before it starts:
-      macOS 14:          Control-click AgentMeter in Applications and choose Open.
-      macOS 15 or later: open AgentMeter, then choose "Open Anyway" in
-                         System Settings > Privacy & Security.
-    Or run: xattr -dr com.apple.quarantine /Applications/AgentMeter.app
-
     Homebrew quits AgentMeter before an upgrade and opens it
     again afterwards.
   EOS
